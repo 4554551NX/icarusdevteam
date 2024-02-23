@@ -1,0 +1,65 @@
+:root {
+    --background-color: #333; /* Dark grey background */
+    --text-color: #fff; /* White text */
+    --title-color: #ff5a72; /* Red for the main title */
+    --team-header-color: #4cb6fd; /* Blue for the team subheader */
+    --project-header-color: #2ecc71; /* Green for the projects subheader */
+    --team-member-name-color: #38f4d8; /* Aqua for the team members' names */
+    --project-title-color: #f1c40f; /* Yellow for the project titles */
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header, .team, .projects {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: var(--title-color);
+}
+
+.team h2 {
+    color: var(--team-header-color);
+}
+
+.projects h2 {
+    color: var(--project-header-color);
+}
+
+.team-member, .project {
+    margin-bottom: 10px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin: 0 0 5px 0;
+    color: var(--team-member-name-color);
+}
+
+.project h3 {
+    margin: 0 0 5px 0;
+    color: var(--project-title-color); /* Specific color for project titles */
+}
+
+.team-member p, .project p {
+    margin: 0;
+    /* Keeping the basic text color as white for project descriptions */
+}
