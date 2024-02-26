@@ -1,13 +1,17 @@
 :root {
     --background-color: #333; /* Dark grey background */
     --text-color: #fff; /* White text */
-    /* Updating color variables to gradient */
-    --title-gradient: linear-gradient(to right, #ff5aa7, #f7a059); /* Red to orange gradient for the main title */
-    --team-header-gradient: linear-gradient(to right, #4cb6fd, #48f5e4); /* Blue gradient for the team subheader */
-    --project-header-gradient: linear-gradient(to right, #2ecc71, #a2d9ce); /* Green gradient for the projects subheader */
-    --team-member-name-gradient: linear-gradient(to right, #38f4d8, #2ebac6); /* Aqua gradient for the team members' names */
-    --project-title-gradient: linear-gradient(to right, #f1c40f, #f39c12); /* Yellow gradient for the project titles */
+    --title-gradient: linear-gradient(to right, #ff5aa7, #f7a059); /* Gradient for the main title */
+    --team-header-gradient: linear-gradient(to right, #4cb6fd, #4bff93); /* Gradient for the team subheader */
+    --project-header-gradient: linear-gradient(to right, #2ecc71, #a2d9ce); /* Gradient for the projects subheader */
+    --team-member-name-gradient: linear-gradient(to right, #38f4d8, #2ebac6); /* Gradient for the team members' names */
+    --project-title-gradient: linear-gradient(to right, #f1c40f, #f39c12); /* Gradient for the project titles */
     --font-family: 'Arial', sans-serif;
+    /* Font size variables */
+    --main-title-font-size: 2.5em; /* Font size for the main title */
+    --subheader-font-size: 2em; /* Font size for subheaders like team and project headers */
+    --title-font-size: 1.75em; /* Font size for other titles like team member names and project titles */
+    --text-font-size: 1em; /* Font size for regular text */
 }
 
 body {
@@ -30,19 +34,41 @@ header, .team, .projects {
 h1 {
     background: var(--title-gradient);
     -webkit-background-clip: text;
-    color: transparent; /* Makes the text color transparent to show the gradient */
+    background-clip: text;
+    color: transparent;
+    font-size: var(--main-title-font-size);
 }
 
 .team h2 {
     background: var(--team-header-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+    font-size: var(--subheader-font-size);
 }
 
 .projects h2 {
     background: var(--project-header-gradient);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
+    font-size: var(--subheader-font-size);
+}
+
+.team-member h3 {
+    background: var(--team-member-name-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: var(--title-font-size);
+}
+
+.project h3 {
+    background: var(--project-title-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: var(--title-font-size);
 }
 
 .team-member, .project {
@@ -56,19 +82,6 @@ h1 {
     border-radius: 50%;
 }
 
-.team-member h3 {
-    background: var(--team-member-name-gradient);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
-.project h3 {
-    background: var(--project-title-gradient);
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 .team-member p, .project p {
-    margin: 0;
-    /* Keeping the basic text color as white for project descriptions */
+    /* Keeps regular text styling from body, no specific font size variable applied here */
 }
