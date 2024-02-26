@@ -1,11 +1,12 @@
 :root {
     --background-color: #333; /* Dark grey background */
     --text-color: #fff; /* White text */
-    --title-color: #ff5a72; /* Red for the main title */
-    --team-header-color: #4cb6fd; /* Blue for the team subheader */
-    --project-header-color: #2ecc71; /* Green for the projects subheader */
-    --team-member-name-color: #38f4d8; /* Aqua for the team members' names */
-    --project-title-color: #f1c40f; /* Yellow for the project titles */
+    /* Updating color variables to gradient */
+    --title-gradient: linear-gradient(to right, #ff5aa7, #f7a059); /* Red to orange gradient for the main title */
+    --team-header-gradient: linear-gradient(to right, #4cb6fd, #48f5e4); /* Blue gradient for the team subheader */
+    --project-header-gradient: linear-gradient(to right, #2ecc71, #a2d9ce); /* Green gradient for the projects subheader */
+    --team-member-name-gradient: linear-gradient(to right, #38f4d8, #2ebac6); /* Aqua gradient for the team members' names */
+    --project-title-gradient: linear-gradient(to right, #f1c40f, #f39c12); /* Yellow gradient for the project titles */
     --font-family: 'Arial', sans-serif;
 }
 
@@ -27,15 +28,21 @@ header, .team, .projects {
 }
 
 h1 {
-    color: var(--title-color);
+    background: var(--title-gradient);
+    -webkit-background-clip: text;
+    color: transparent; /* Makes the text color transparent to show the gradient */
 }
 
 .team h2 {
-    color: var(--team-header-color);
+    background: var(--team-header-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .projects h2 {
-    color: var(--project-header-color);
+    background: var(--project-header-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .team-member, .project {
@@ -50,13 +57,15 @@ h1 {
 }
 
 .team-member h3 {
-    margin: 0 0 5px 0;
-    color: var(--team-member-name-color);
+    background: var(--team-member-name-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .project h3 {
-    margin: 0 0 5px 0;
-    color: var(--project-title-color); /* Specific color for project titles */
+    background: var(--project-title-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .team-member p, .project p {
