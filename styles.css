@@ -1,15 +1,14 @@
 :root {
-    --background-color: #333; /* Dark grey background */
     --text-color: #fff; /* White text */
     --title-gradient: linear-gradient(to right, #ff5aa7, #f7a059); /* Gradient for the main title */
     --team-header-gradient: linear-gradient(to right, #4cb6fd, #4bff93); /* Gradient for the team subheader */
-    --project-header-gradient: linear-gradient(to right, #2ecc71, #a2d9ce); /* Gradient for the projects subheader */
+    --project-header-gradient: linear-gradient(to right, #a42ecc, #a2d9ce); /* Gradient for the projects subheader */
     --team-member-name-gradient: linear-gradient(to right, #38f4d8, #2ebac6); /* Gradient for the team members' names */
-    --project-title-gradient: linear-gradient(to right, #f1c40f, #f39c12); /* Gradient for the project titles */
+    --project-title-gradient: linear-gradient(to right, #f10f0f, #f37b12); /* Gradient for the project titles */
     --font-family: 'Arial', sans-serif;
     /* Font size variables */
-    --main-title-font-size: 2.5em; /* Font size for the main title */
-    --subheader-font-size: 2em; /* Font size for subheaders like team and project headers */
+    --main-title-font-size: 2.95em; /* Font size for the main title */
+    --subheader-font-size: 2.45em; /* Font size for subheaders like team and project headers */
     --title-font-size: 1.75em; /* Font size for other titles like team member names and project titles */
     --text-font-size: 1em; /* Font size for regular text */
 }
@@ -17,7 +16,8 @@
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    background-color: var(--background-color);
+    background: linear-gradient(to bottom, #101010, #232323);
+    /* background: linear-gradient(to bottom, #101010, #232323); */
     color: var(--text-color);
 }
 
