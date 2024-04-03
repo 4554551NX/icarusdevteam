@@ -101,3 +101,31 @@ h1 {
 .team-member p, .project p {
     /* Keeps regular text styling from body, no specific font size variable applied here */
 }
+
+
+/* Styles for the Join Us button */
+.join-us-button {
+    display: inline-block;
+    background: var(--title-gradient); /* Use the same gradient as your title for consistency */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Adjust size as needed */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Optional: adds rounded corners */
+    text-decoration: none; /* Removes underline from the link */
+    font-size: 1em; /* Adjust text size as needed */
+    margin-top: 20px; /* Space above the button */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: transform 0.3s ease; /* Smooth transition for click effect */
+    font-weight: bold; /* Makes the button text bolder */
+}
+
+
+
+
+.join-us-button:hover {
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+}
+
+.join-us-button:active {
+    transform: translateY(1px); /* Slightly depress the button on click */
+}
