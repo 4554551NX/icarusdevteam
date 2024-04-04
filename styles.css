@@ -55,6 +55,16 @@ h1 {
     font-size: var(--main-title-font-size);
 }
 
+.what-we-do-header {
+    background: linear-gradient(to right, #4cb6fd, #4bff93); /* Adjust colors for your desired blue-green gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* This makes the text take the color of the gradient */
+    font-size: var(--main-title-font-size); /* Reusing the main title font size variable */
+    
+}
+
+
 .team h2 {
     background: var(--team-header-gradient);
     -webkit-background-clip: text;
@@ -103,22 +113,66 @@ h1 {
 }
 
 
-/* Styles for the Join Us button */
-.join-us-button {
+
+
+
+
+
+
+
+
+
+/* General button styles */
+.button {
     display: inline-block;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+    margin-right: 11px; /* Adds spacing to the right of each button */
+}
+
+.join-us-button {
     background: var(--title-gradient); /* Use the same gradient as your title for consistency */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Adjust size as needed */
-    border: none; /* Remove default border */
-    border-radius: 5px; /* Optional: adds rounded corners */
-    text-decoration: none; /* Removes underline from the link */
-    font-size: 1em; /* Adjust text size as needed */
-    margin-top: 20px; /* Space above the button */
-    cursor: pointer; /* Changes the cursor to a pointer on hover */
-    transition: transform 0.3s ease; /* Smooth transition for click effect */
-    font-weight: bold; /* Makes the button text bolder */
+}
+
+.meet-the-team-button {
+    background: linear-gradient(to right, #1184cb, #21dfc9); /* Blue-green gradient */
+}
+
+.projects-button {
+    background: linear-gradient(to right, #1fc193, #2cb835); /* Pink-purple gradient */
+}
+
+.consulting-button {
+    background: linear-gradient(to right, #fc2542, #cb9611 ); /* Custom gradient for consulting */
+}
+
+.hire-us-button {
+    background: linear-gradient(to right, #ff1fcb, #b968ff); /* Custom gradient for hire us */
 }
 
 
 
 
+
+
+/* This style will be applied to all your pages, ensuring there's a back-to-home link */
+.back-to-home {
+    display: block;
+    margin-top: 20px;
+    font-size: 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.top-buttons-container {
+    margin-bottom: 30px; /* Adjust this value to control the space after your button set */
+}
