@@ -6,11 +6,14 @@
     --team-member-name-gradient: linear-gradient(to right, #38f4d8, #2ebac6); /* Gradient for the team members' names */
     --project-title-gradient: linear-gradient(to right, #e93c3c, #ec9141); /* Gradient for the project titles */
     --font-family: 'Arial', sans-serif;
+    --p-color: #88cded;
+   
     /* Font size variables */
     --main-title-font-size: 2.95em; /* Font size for the main title */
     --subheader-font-size: 2.45em; /* Font size for subheaders like team and project headers */
     --title-font-size: 1.75em; /* Font size for other titles like team member names and project titles */
     --text-font-size: 1em; /* Font size for regular text */
+    --p-size: 1.75em;s
 }
 
 body {
@@ -54,6 +57,16 @@ h1 {
     color: transparent;
     font-size: var(--main-title-font-size);
 }
+
+p {
+    background: var(--p-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: var(--p-size);
+}
+
+
 
 .what-we-do-header {
     background: linear-gradient(to right, #4cb6fd, #4bff93); /* Adjust colors for your desired blue-green gradient */
@@ -138,9 +151,48 @@ h1 {
     margin-right: 11px; /* Adds spacing to the right of each button */
 }
 
-.join-us-button {
-    background: var(--title-gradient); /* Use the same gradient as your title for consistency */
-}
+
+
+  
+  
+
+
+
+
+
+  /* MOVING GRADIENT STYLES */
+  @keyframes movingGradient {
+    0% {
+      background-position: left center;
+    }
+    100% {
+      background-position: right center;
+    }
+  }
+  
+  .join-us-button {
+    background: linear-gradient(to right, #ff5aa7, #f7a059, #ff5aa7, #59a0f7, #d559f7, #d559f7); /* Your original colors */
+    background-size: 500% 500%; 
+    background-position: left center;
+    animation: movingGradient 15s linear infinite alternate; 
+  }
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
 
 .meet-the-team-button {
     background: linear-gradient(to right, #1184cb, #21dfc9); /* Blue-green gradient */
@@ -151,7 +203,7 @@ h1 {
 }
 
 .consulting-button {
-    background: linear-gradient(to right, #fc2542, #cb9611 ); /* Custom gradient for consulting */
+    background: linear-gradient(to right, #c6fc25, #11cb14 ); /* Custom gradient for consulting */
 }
 
 .hire-us-button {
@@ -160,6 +212,13 @@ h1 {
 
 
 
+.about-us-header {
+    background: linear-gradient(to right, #4cb6fd, #8a2be2); /* Blue to Purple gradient */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* This makes the text take the color of the gradient */
+    font-size: var(--main-title-font-size); /* Reusing the main title font size variable */
+}
 
 
 
