@@ -171,7 +171,7 @@ p {
   }
   
   .join-us-button {
-    background: linear-gradient(to right, #ff5aa7, #f7a059, #ff5aa7, #59a0f7, #d559f7, #d559f7); /* Your original colors */
+    background: linear-gradient(to right, #ff5aa7, #f7a059, #ff5aa7, #59a0f7, #d559f7, #d559f7); 
     background-size: 500% 500%; 
     background-position: left center;
     animation: movingGradient 15s linear infinite alternate; 
@@ -179,7 +179,9 @@ p {
 
 
 
-
+  .survey-button {
+    background: linear-gradient(to right, #ff9a76, #ffcd56); 
+}
 
 
 
